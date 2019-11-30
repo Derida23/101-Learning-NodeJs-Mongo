@@ -13,7 +13,7 @@ let mongoose = require ('mongoose')
 let app = express();
 
 // import routes
-let apiRoutes = require("./api-route")
+let apiRoutes = require("./routes/api-route")
 
 // configuration bodyParser
 app.use(bodyParser.urlencoded({

@@ -10,7 +10,7 @@ router.get('/', function(req,res){
 });
 
 // import contact controller
-var contactController = require('./contactController');
+var contactController = require('../controller/contactController');
 
 // contact apiRoutes
 router.route('/contacts')
@@ -24,7 +24,7 @@ router.route('/contacts/:contact_id')
 .delete(contactController.delete)
 
 // data siswa apiRoutes
-var dataSiswa = require("./siswaController");
+var dataSiswa = require("../controller/siswaController");
 
 // data siswa api
 router.route('/datasiswa')
